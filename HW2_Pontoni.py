@@ -19,7 +19,6 @@ def petitions(page):
 		soup = BeautifulSoup(web_page.read())
 		pl = soup.find_all('article')
 		petition = {}
-		#	Now I want to look at not whole page but individual articles:
 		pl = soup.find_all('article')
 		del pl[0]
 		for i in range(0,20):
